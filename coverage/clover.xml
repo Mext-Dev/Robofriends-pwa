@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1544696734599" clover="3.2.0">
-  <project timestamp="1544696734600" name="All files">
+<coverage generated="1544698332244" clover="3.2.0">
+  <project timestamp="1544698332244" name="All files">
     <metrics statements="125" coveredstatements="3" conditionals="69" coveredconditionals="0" methods="53" coveredmethods="1" elements="247" coveredelements="4" complexity="0" loc="125" ncloc="125" packages="4" files="15" classes="15">
       <package name="src">
         <metrics statements="56" coveredstatements="1" conditionals="35" coveredconditionals="0" methods="21" coveredmethods="0"/>
@@ -92,7 +92,7 @@
         <file name="Card.js" path="/Users/max/Documents/Project/Explore/udemy/Robofriends-pwa/src/components/Card.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="3" count="1" type="stmt"/>
-          <line num="4" count="1" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
         </file>
         <file name="CardList.js" path="/Users/max/Documents/Project/Explore/udemy/Robofriends-pwa/src/components/CardList.js">
           <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
