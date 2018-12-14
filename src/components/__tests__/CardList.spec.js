@@ -4,7 +4,7 @@ import React from 'react'
 
 describe('Card Component unit test', () => {
 
-    it('should to match component card with snapshot', () => {
+    it('should to match component cardlist with snapshot', () => {
         // will matching component Card with Card Snapshot
         const mockRobots =[
             {

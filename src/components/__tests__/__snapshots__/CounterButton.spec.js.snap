@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Component unit test should to match component CounterButtom with snapshot 1`] = `
+exports[`Card Component unit test should to match component card with snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CounterButton />,
+  Symbol(enzyme.__unrendered__): <CounterButton
+    color="red"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -21,7 +23,8 @@ ShallowWrapper {
         "Count: ",
         1,
       ],
-      "color": undefined,
+      "color": "red",
+      "id": "counter",
       "onClick": [Function],
     },
     "ref": null,
@@ -41,7 +44,8 @@ ShallowWrapper {
           "Count: ",
           1,
         ],
-        "color": undefined,
+        "color": "red",
+        "id": "counter",
         "onClick": [Function],
       },
       "ref": null,
