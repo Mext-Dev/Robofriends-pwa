@@ -1,6 +1,7 @@
 import { shallow, mount } from 'enzyme'
 import React from 'react'
 import App from '../App';
+import {mapStateToProps, mapDispatchToProps} from '../App';
 
 import configureMockStore from 'redux-mock-store'
 
@@ -30,4 +31,15 @@ describe('Components <App/>', () => {
         
         expect(mountWrapper.find('ErrorBoundry'));
     })
+
+    it('should correctly filters' ,() => {
+        expect(wrapper.instance().filteredRobots()).toEqual(mockRobots)
+    })
+
+    // it('should text onchange dispatch', () => {
+    //     const dispatch = jest.fn();
+
+    //     mapDispatchToProps(dispatch).onSearchChange();
+    //     expect(dispatch.mock.calls[0][0]).toEqual({type: 'CHANGE_SEARCHFIELD'})
+    // })
 })
