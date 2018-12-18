@@ -36,11 +36,16 @@ class App extends Component {
     this.props.onRequestRobots();
   }
 
-  render() {
-    const { robots, searchField, onSearchChange, isPending } = this.props;
-    const filteredRobots = robots.filter(robot => {
+  filteredRobots = () => {
+    const { robots, searchField } = this.props
+
+    return robots.filter(robot => {
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
+  }
+  render() {
+    const { robots, onSearchChange, isPending } = this.props;
+    
     return (
       <div className='tc'>
         <Header count={this.state.count}/>
@@ -48,7 +53,7 @@ class App extends Component {
         <Scroll>
           { isPending ? <h1>Loading</h1> :
             <ErrorBoundry>
-              <CardList robots={filteredRobots} />
+              <CardList robots={this.filteredRobots()} />
             </ErrorBoundry>
           }
         </Scroll>
